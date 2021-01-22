@@ -7,7 +7,7 @@ interface RepositoriesState {
   data: string[]
 }
 
-
+// Repositories Reducer
 const reducer = (
   state: RepositoriesState,
   action: Action
