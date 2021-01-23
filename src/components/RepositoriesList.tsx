@@ -8,6 +8,7 @@ const RepositoriesList: React.FC = () => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     searchRepositories(term)
+    // or dispatch(actionCreators.searchRepositories(term))
   }
 
   return (
