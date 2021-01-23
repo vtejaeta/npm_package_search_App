@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {Dispatch} from 'redux'
+import { Dispatch } from 'redux'
 import { ActionType } from '../action-types'
 import { Action } from '../actions'
 
@@ -19,7 +19,7 @@ export const searchRepositories = (searchTerm: string) => {
         }
       )
 
-      const names = data.objects.map((result) => {
+      const names = data.objects.map((result: any) => {
         return result.package.name
       })
 
